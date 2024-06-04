@@ -1,0 +1,174 @@
+# CHECK PYTHON VERSION IN THE SYSTEM
+import sys
+print(sys.version)
+
+# FIRST LINE OF CODE AS A PYTHON PROGRAMMER
+print("Hello world: Let's get the learning started")
+
+# PYTHON INDENTATION
+# Indentation refers to the spaces at the beginning of a code line.
+# In Python, indentation is very important.
+if 5 > 2:
+    print("Five is greater than two!")
+
+# PYTHON VARIABLES
+# In Python, variables are created when you assign a value to it:
+a = 5
+b = 5.5
+c = "HELLO"
+
+# If you want to specify the data type of a variable, this can be done with casting.
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+
+# You can get the data type of a variable with the type() function.
+print(type(x))
+print(type(y))
+print(type(z))
+
+# String variables can be declared either by using single or double quotes:
+x = "Data Scientist is my goal"
+# is the same as
+x = 'Data Scientist is my goal'
+
+# VARIABLE NAMES: BASIC RULES TO REMEMBER WHILE ASSIGNING A VARIABLE NAME
+# - A variable name must start with a letter or the underscore character.
+# - A variable name cannot start with a number.
+# - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+# - Variable names are case-sensitive (age, Age, and AGE are three different variables).
+# - A variable name cannot be any of the Python keywords.
+
+# ONE CAN ASSIGN MULTIPLE VALUES TO MULTIPLE VARIABLES IN ONE LINE:
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+# GLOBAL VARIABLE
+# If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.
+# The global variable with the same name will remain as it was, global and with the original value.
+x = "awesome"
+def myfunc():
+    x = "fantastic"
+    print("Python is " + x)
+
+myfunc()
+print("Python is " + x)
+
+# GLOBAL KEYWORD
+# To change the value of a global variable inside a function, refer to the variable by using the global keyword:
+x = "awesome"
+def myfunc():
+    global x
+    x = "fantastic"
+
+myfunc()
+print("Python is " + x)
+
+# BUILT-IN DATA TYPES
+# Variables can store data of different types, and different types can do different things.
+x = 5
+print(type(x))
+
+# Numeric Types:
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex (Complex numbers are written with a "j" as the imaginary part)
+print(type(x))
+print(type(y))
+print(type(z))
+
+# You can convert from one type to another with the int(), float(), and complex() methods.
+
+# Python has a built-in module called random that can be used to make random numbers:
+import random
+print(random.randrange(1, 10))
+
+
+# Text Type:
+# str (string) (' ', " ")
+
+# STRING SLICING
+# You can return a range of characters by using the slice syntax.
+# Specify the start index and the end index, separated by a colon, to return a part of the string.
+x = "I am a skilled Business Analyst with diverse experience in consulting and data analysis."
+y = "I am currently looking for a job."
+
+# Demonstrating string slicing
+SI = 7
+EI = 13
+print(x[SI:EI + 1])  # Sliced portion "skilled"
+
+# Slicing from start to end index
+print(x[:EI])  # Sliced from start to "skilled"
+
+# Slicing from start index to the end
+print(x[SI:])  # Sliced from "skilled" to the end
+
+# Converting to upper case
+print(x.upper())  # Entire string in upper case
+
+# Converting to lower case
+print(x.lower())  # Entire string in lower case
+
+# Removing whitespace
+print("  " + x + "  ".strip())  # Whitespace removed
+
+# Replacing a string
+print(x.replace("skilled", "experienced"))  # Replacing "skilled" with "experienced"
+
+# Splitting the string
+print(x.split())  # Splitting the string into a list of words
+
+# String concatenation
+print(x + " " + y)  # Concatenating x and y
+
+# Final creative output
+print("\nCreative Output:")
+creative_output = (
+    "Looking for a job with a focus on: " + x[7:13 + 1] + " Business Analysis.\n" +
+    "Expertise: " + x[SI:].upper() + "\n" +
+    y.upper() + "\n" +
+    "No whitespace: " + (x + "  ").strip() + "\n" +
+    "Replacing: " + x.replace("diverse", "extensive") + "\n" +
+    "Split words: " + ", ".join(x.split()) + "\n" +
+    "Join again: " + " ".join(x.split()) + " " + y
+)
+print(creative_output)
+
+# F-STRING: FORMATTING STRING
+# To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders for variables and other operations.
+age = 27
+txt = f"Hi, I am {age} years old"
+print(txt)
+
+# Placeholder and Modifier
+price = 59.3267
+txt = f"The price is {price:.2f} dollars"
+print(txt)
+# A placeholder can include a modifier to format the value.
+# A modifier is included by adding a colon : followed by a legal formatting type, like .2f which means fixed point number with 2 decimals.
+
+# Sequence Types
+# list []
+# tuple ()
+# range (range())
+
+# Mapping Type:
+# dict (dictionary) {variable: value}
+
+# Set Types:
+# set {}
+# frozenset (frozenset({}))
+
+# Boolean Type:
+# bool (True/False)
+
+# Binary Types:
+# bytes (b" ")
+# bytearray (bytearray())
+# memoryview (memoryview(bytes()))
+
+# None Type:
+# NoneType (None)

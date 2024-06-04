@@ -12,50 +12,50 @@ print("Hello world: Let's get the learning started")
 # Numeric Types:
 # int
 a = 5
-print(f"Variable a is of type {type(a)} and value {a}")
+print(type(a))
 
 # float
 b = 5.5
-print(f"Variable b is of type {type(b)} and value {b}")
+print(type(b))
 
 # complex
 c = 1j
-print(f"Variable c is of type {type(c)} and value {c}")
+print(type(c))
 
 # String Type:
 # str
 d = "HELLO"
-print(f"Variable d is of type {type(d)} and value {d}")
+print(type(d))
 
 # Boolean Type:
 # bool
 e = True
-print(f"Variable e is of type {type(e)} and value {e}")
+print(type(e))
 
 # List Type:
 # list
 f = ["Apple", "Banana", "Cherry"]
-print(f"Variable f is of type {type(f)} and value {f}")
+print(type(f))
 
 # Tuple Type:
 # tuple
 g = (10.0, 20.0)
-print(f"Variable g is of type {type(g)} and value {g}")
+print(type(g))
 
 # Set Type:
 # set
 h = {1, 2, 3, 4, 5}
-print(f"Variable h is of type {type(h)} and value {h}")
+print(type(h))
 
 # Dictionary Type:
 # dict
 i = {"name": "Kartik", "age": 27, "is_programmer": True}
-print(f"Variable i is of type {type(i)} and value {i}")
+print(type(i))
 
 # None Type:
 # NoneType
 j = None
-print(f"Variable j is of type {type(j)} and value {j}")
+print(type(j))
 
 # If you want to specify the data type of a variable, this can be done with casting.
 x = str(3)    # x will be '3'

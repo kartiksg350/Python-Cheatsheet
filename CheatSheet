@@ -150,17 +150,10 @@ print(txt)
 # A placeholder can include a modifier to format the value.
 # A modifier is included by adding a colon : followed by a legal formatting type, like .2f which means fixed point number with 2 decimals.
 
-# Sequence Types
-# list []
-# tuple ()
-# range (range())
+# ESCAPE CHARACTERS
+# To insert characters that are illegal in a string, use an escape character.
+txt = "I have the skill set and desire to be the best \"DATA SCIENTIST\" that you can hire."
 
-# Mapping Type:
-# dict (dictionary) {variable: value}
-
-# Set Types:
-# set {}
-# frozenset (frozenset({}))
 
 # Boolean Type:
 # bool (True/False)
@@ -172,3 +165,36 @@ print(txt)
 
 # None Type:
 # NoneType (None)
+
+
+# TYPES OF ARRAYS:
+# list []
+# tuple ()
+# set {}
+
+# NOTE: In Slicing always indexes are kept within the [] in syntax
+
+# Set Types:
+# set {}
+# frozenset (frozenset({}))
+
+# TUPLE ()
+# For creating the tuple we are using normal brackets()
+# Tuples are immutable in nature
+# We can have heterogenous data as well (any type of data types)
+data = ('A', 10, 10.5, True)
+type (data[0])
+
+# SET TYPES:
+# set {}
+# frozenset (frozenset({}))
+
+# Values are always in ascending order
+# Dulicates are removed
+# Index or slicing are not possible in sets
+# We can have heterogenous data
+#Booleans are counted as 0 (FALSE) or 1 (TRUE)
+range (range())
+
+# Mapping Type:
+# dict (dictionary) {variable: value}

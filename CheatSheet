@@ -5,17 +5,57 @@ print(sys.version)
 # FIRST LINE OF CODE AS A PYTHON PROGRAMMER
 print("Hello world: Let's get the learning started")
 
-# PYTHON INDENTATION
-# Indentation refers to the spaces at the beginning of a code line.
-# In Python, indentation is very important.
-if 5 > 2:
-    print("Five is greater than two!")
-
 # PYTHON VARIABLES
-# In Python, variables are created when you assign a value to it:
+# Python variables can store data of different types, and different types can do different things.
+# Here are some examples of different types of Python variables:
+
+# Numeric Types:
+# int
 a = 5
+print(f"Variable a is of type {type(a)} and value {a}")
+
+# float
 b = 5.5
-c = "HELLO"
+print(f"Variable b is of type {type(b)} and value {b}")
+
+# complex
+c = 1j
+print(f"Variable c is of type {type(c)} and value {c}")
+
+# String Type:
+# str
+d = "HELLO"
+print(f"Variable d is of type {type(d)} and value {d}")
+
+# Boolean Type:
+# bool
+e = True
+print(f"Variable e is of type {type(e)} and value {e}")
+
+# List Type:
+# list
+f = ["Apple", "Banana", "Cherry"]
+print(f"Variable f is of type {type(f)} and value {f}")
+
+# Tuple Type:
+# tuple
+g = (10.0, 20.0)
+print(f"Variable g is of type {type(g)} and value {g}")
+
+# Set Type:
+# set
+h = {1, 2, 3, 4, 5}
+print(f"Variable h is of type {type(h)} and value {h}")
+
+# Dictionary Type:
+# dict
+i = {"name": "Kartik", "age": 27, "is_programmer": True}
+print(f"Variable i is of type {type(i)} and value {i}")
+
+# None Type:
+# NoneType
+j = None
+print(f"Variable j is of type {type(j)} and value {j}")
 
 # If you want to specify the data type of a variable, this can be done with casting.
 x = str(3)    # x will be '3'
@@ -85,9 +125,12 @@ print(type(z))
 import random
 print(random.randrange(1, 10))
 
-
-# Text Type:
-# str (string) (' ', " ")
+# TEXT TYPE: STR (STRING)
+# String variables can be declared either by using single or double quotes.
+message = "Data Scientist is my goal"
+print(message)
+message = 'Data Scientist is my goal'
+print(message)
 
 # STRING SLICING
 # You can return a range of characters by using the slice syntax.
@@ -95,42 +138,40 @@ print(random.randrange(1, 10))
 x = "I am a skilled Business Analyst with diverse experience in consulting and data analysis."
 y = "I am currently looking for a job."
 
-# Demonstrating string slicing
 SI = 7
 EI = 13
 print(x[SI:EI + 1])  # Sliced portion "skilled"
+print(x[:EI])        # Sliced from start to "skilled"
+print(x[SI:])        # Sliced from "skilled" to the end
 
-# Slicing from start to end index
-print(x[:EI])  # Sliced from start to "skilled"
+# CONVERTING CASE
+print(x.upper())     # Entire string in upper case
+print(x.lower())     # Entire string in lower case
 
-# Slicing from start index to the end
-print(x[SI:])  # Sliced from "skilled" to the end
+# REMOVING WHITESPACE
+print(("  " + x + "  ").strip())  # Whitespace removed
 
-# Converting to upper case
-print(x.upper())  # Entire string in upper case
-
-# Converting to lower case
-print(x.lower())  # Entire string in lower case
-
-# Removing whitespace
-print("  " + x + "  ".strip())  # Whitespace removed
-
-# Replacing a string
+# REPLACING A STRING
 print(x.replace("skilled", "experienced"))  # Replacing "skilled" with "experienced"
 
-# Splitting the string
-print(x.split())  # Splitting the string into a list of words
+# SPLITTING THE STRING
+split_words = x.split()
+print(split_words)  # Splitting the string into a list of words
 
-# String concatenation
+# JOINING SPLIT WORDS BACK INTO A SINGLE STRING
+joined_string = " ".join(split_words)
+print(joined_string)  # Joining the list of words back into a string
+
+# STRING CONCATENATION
 print(x + " " + y)  # Concatenating x and y
 
-# Final creative output
+# FINAL CREATIVE OUTPUT USING THE ABOVE TECHNIQUES
 print("\nCreative Output:")
 creative_output = (
     "Looking for a job with a focus on: " + x[7:13 + 1] + " Business Analysis.\n" +
     "Expertise: " + x[SI:].upper() + "\n" +
     y.upper() + "\n" +
-    "No whitespace: " + (x + "  ").strip() + "\n" +
+    "No whitespace: " + ("  " + x + "  ").strip() + "\n" +
     "Replacing: " + x.replace("diverse", "extensive") + "\n" +
     "Split words: " + ", ".join(x.split()) + "\n" +
     "Join again: " + " ".join(x.split()) + " " + y
@@ -143,58 +184,114 @@ age = 27
 txt = f"Hi, I am {age} years old"
 print(txt)
 
-# Placeholder and Modifier
-price = 59.3267
-txt = f"The price is {price:.2f} dollars"
-print(txt)
-# A placeholder can include a modifier to format the value.
-# A modifier is included by adding a colon : followed by a legal formatting type, like .2f which means fixed point number with 2 decimals.
+# Adding salary expectation in placeholder example using f-string
+salary_inr = 1000000  # 10 LPA in INR
+salary_gbp = 25000    # 25000 pounds per annum
+txt_salary = f"My expected salary is {salary_inr:,} INR or {salary_gbp:,} GBP per annum."
+print(txt_salary)
 
 # ESCAPE CHARACTERS
 # To insert characters that are illegal in a string, use an escape character.
 txt = "I have the skill set and desire to be the best \"DATA SCIENTIST\" that you can hire."
+print(txt)
 
+# BOOLEAN TYPE: BOOL (TRUE/FALSE)
+is_programmer = True
+is_not_programmer = False
+print(f"Is a programmer: {is_programmer}")
+print(f"Is not a programmer: {is_not_programmer}")
 
-# Boolean Type:
-# bool (True/False)
-
-# Binary Types:
+# BINARY TYPES
 # bytes (b" ")
+byte_data = b"Hello"
+print(byte_data)
+
 # bytearray (bytearray())
+bytearray_data = bytearray(5)
+print(bytearray_data)
+
 # memoryview (memoryview(bytes()))
+memoryview_data = memoryview(byte_data)
+print(memoryview_data)
 
-# None Type:
-# NoneType (None)
+# NONE TYPE: NONETYPE (NONE)
+no_value = None
+print(no_value)
 
-
-# TYPES OF ARRAYS:
+# TYPES OF ARRAYS
 # list []
+fruits = ["Apple", "Banana", "Cherry"]
+print(fruits)
+
 # tuple ()
-# set {}
+coordinates = (10.0, 20.0)
+print(coordinates)
 
-# NOTE: In Slicing always indexes are kept within the [] in syntax
-
-# Set Types:
 # set {}
+unique_numbers = {1, 2, 3, 4, 5}
+print(unique_numbers)
+
+# Example of slicing in a list
+numbers = [1, 2, 3, 4, 5]
+print(numbers[1:3])  # Slicing from index 1 to 2
+
+# SET TYPES
+# set {}
+random_set = {3, 1, 4, 1, 5, 9}
+print(random_set)  # Values will be in ascending order and duplicates removed
+
 # frozenset (frozenset({}))
+immutable_set = frozenset(random_set)
+print(immutable_set)
 
-# TUPLE ()
-# For creating the tuple we are using normal brackets()
-# Tuples are immutable in nature
-# We can have heterogenous data as well (any type of data types)
+# TUPLES
+# Tuples are immutable in nature and can contain heterogeneous data.
 data = ('A', 10, 10.5, True)
-type (data[0])
+print(data)
+print(type(data[0]))  # Type of the first element in the tuple
 
-# SET TYPES:
-# set {}
+# SET OPERATIONS
+unique_items = {1, 2, 2, 3, 4}
+print(unique_items)  # Duplicates are removed, values in ascending order
+
 # frozenset (frozenset({}))
+immutable_items = frozenset(unique_items)
+print(immutable_items)
 
-# Values are always in ascending order
-# Dulicates are removed
-# Index or slicing are not possible in sets
-# We can have heterogenous data
-#Booleans are counted as 0 (FALSE) or 1 (TRUE)
-range (range())
+# Booleans are counted as 0 (False) or 1 (True)
+boolean_set = {True, False, True, False, 1, 0}
+print(boolean_set)  # Prints {False, True} since True is 1 and False is 0
 
-# Mapping Type:
-# dict (dictionary) {variable: value}
+# MAPPING TYPE: DICTIONARY
+# dict (dictionary) {key: value}
+person = {
+    "name": "Kartik",
+    "age": 27,
+    "is_programmer": True
+}
+print(person)
+
+# Adding slicing and data type checking for a string example
+sample_string = "Hello, World!"
+# Slicing the string
+print(sample_string[0:5])  # Output: Hello
+
+# Check type of sliced part
+sliced_part = sample_string[0:5]
+print(type(sliced_part))  # Output: <class 'str'>
+
+# Adding more examples to illustrate the concepts
+
+# Example of list slicing
+tech_stack = ["Python", "SQL", "R", "Tableau", "PowerBI"]
+print(tech_stack[1:4])  # Output: ['SQL', 'R', 'Tableau']
+
+# Example of set operations
+programming_languages = {"Python", "SQL", "R"}
+print(programming_languages)  # Output: {'Python', 'SQL', 'R'}
+
+# Example of using f-strings for formatted output
+name = "Kartik"
+goal = "Data Scientist"
+print(f"My name is {name} and my goal is to become a {goal}.")
+

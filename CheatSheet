@@ -328,3 +328,94 @@ name = "Kartik"
 goal = "Data Scientist"
 print(f"My name is {name} and my goal is to become a {goal}.")
 
+#TO STORE MULTPLE VALUES
+# 1. LISTS
+# [] are used for representing lists
+# List of keywords from the resume
+
+import random
+
+# Create a list of random numbers
+random_numbers = [random.randint(1, 100) for _ in range(10)]  # List of 10 random numbers between 1 and 100
+
+# Display the list
+print("Random Numbers:", random_numbers)
+
+# Length of the list
+length = len(random_numbers)
+print("Length:", length)
+
+# Sum of the numbers in the list
+total_sum = sum(random_numbers)
+print("Sum:", total_sum)
+
+# Minimum value in the list
+min_value = min(random_numbers)
+print("Min:", min_value)
+
+# Maximum value in the list
+max_value = max(random_numbers)
+print("Max:", max_value)
+
+# Average value of the list
+average = total_sum / length
+print("Average:", average)
+
+# Delete an element (let's delete the element at index 2)
+del random_numbers[2]
+print("After deletion at index 2:", random_numbers)
+
+# Indexing examples
+# From start to end
+print("From start to end:", random_numbers[:])
+
+# From start to some index (let's say index 4)
+print("From start to index 4:", random_numbers[:4])
+
+# From some index to end (let's say starting from index 3)
+print("From index 3 to end:", random_numbers[3:])
+
+# Any in between (let's say from index 2 to index 5)
+print("From index 2 to 5:", random_numbers[2:5])
+
+# Gap between indexes (positive and negative slicing)
+# Positive slicing from index 1 to 6 with a gap of 2
+print("Positive slicing with gap of 2:", random_numbers[1:7:2])
+
+# Negative slicing from index 6 to 1 with a gap of -2
+print("Negative slicing with gap of -2:", random_numbers[6:0:-2])
+
+# Multiplying list
+multiplied_list = random_numbers * 3
+print(multiplied_list)
+
+# List of keywords from the resume in one line
+resume_keywords = ["Business Analyst", "Consulting", "Data Analysis", "Healthcare Efficiency", "Operational Review", "SQL", "Python", "Excel", "Data Visualization", "Tableau", "PowerBI", "NHS", "Project Management", "IT Solutions", "Statistical Analysis", "R Programming", "Discrete Event Simulation", "Optimization", "Resource Allocation", "Client Communication", "Requirement Gathering", "BRD", "FRD", "Gap Analysis", "Dashboard Development"]
+# Example numbers related to achievements or metrics in a resume
+
+# Years of experience in various fields
+years_of_experience = [1, 2, 3]  # Example: 1 year in IT Solutions, 2 years in Data Analysis, 3 years in Consulting
+
+# Number of projects completed
+projects_completed = [5, 10, 15, 20]  # Example: Number of projects completed in different areas
+
+# Number of tools and technologies used
+tools_and_technologies = [5, 8, 10]  # Example: Number of tools/technologies used (SQL, Python, Tableau, etc.)
+
+# Performance improvement percentages
+performance_improvements = [10, 20, 30]  # Example: Percentage improvements in various projects
+
+# Team size managed or collaborated with
+team_sizes = [3, 5, 7, 10]  # Example: Size of teams managed or worked with
+
+# Education GPA or percentages
+education_scores = [3.8, 70, 80]  # Example: GPA on a 4.0 scale, percentages in various degrees or certifications
+
+# Print the numerical lists
+print("Years of Experience in Various Fields:", years_of_experience)
+print("Number of Projects Completed:", projects_completed)
+print("Number of Tools and Technologies Used:", tools_and_technologies)
+print("Performance Improvement Percentages:", performance_improvements)
+print("Team Sizes Managed or Collaborated With:", team_sizes)
+print("Education GPA or Percentages:", education_scores)
+

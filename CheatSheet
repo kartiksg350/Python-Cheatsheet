@@ -154,6 +154,39 @@ print(("  " + x + "  ").strip())  # Whitespace removed
 # REPLACING A STRING
 print(x.replace("skilled", "experienced"))  # Replacing "skilled" with "experienced"
 
+# Checking the length of a string
+length_x = len(x)
+print("Length of the string x: ", length_x)
+
+# Finding a substring within a string
+substring = "Business Analyst"
+find_substring = x.find(substring)
+print("Position of 'Business Analyst' in x: ", find_substring)
+
+# Finding the index of a substring
+index_substring = x.index(substring)
+print("Index of 'Business Analyst' in x: ", index_substring)
+
+# Capitalizing the first character of the string
+capitalized_x = x.capitalize()
+print("Capitalized string x: ", capitalized_x)
+
+# Converting the string to upper case
+uppercase_x = x.upper()
+print("Uppercase string x: ", uppercase_x)
+
+# Converting the string to lower case
+lowercase_x = x.lower()
+print("Lowercase string x: ", lowercase_x)
+
+# Swapping the case of the string
+swapcase_x = x.swapcase()
+print("Swapcase string x: ", swapcase_x)
+
+# Counting occurrences of a substring
+count_experience = x.count("experience")
+print("Number of times 'experience' appears in x: ", count_experience)
+
 # SPLITTING THE STRING
 split_words = x.split()
 print(split_words)  # Splitting the string into a list of words

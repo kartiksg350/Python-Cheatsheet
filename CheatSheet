@@ -332,11 +332,11 @@ print(f"My name is {name} and my goal is to become a {goal}.")
 # 1. LISTS
 # [] are used for representing lists
 # List of keywords from the resume
-
-import random
+# Lists are Mutable (Values can be changed without changing the memory location)
 
 # Create a list of random numbers
-random_numbers = [random.randint(1, 100) for _ in range(10)]  # List of 10 random numbers between 1 and 100
+random_numbers = [42, 87, 23, 76, 54, 19, 68, 91, 34, 27]
+id (random_numbers)
 
 # Display the list
 print("Random Numbers:", random_numbers)
@@ -387,14 +387,17 @@ print("Negative slicing with gap of -2:", random_numbers[6:0:-2])
 
 # Multiplying list
 multiplied_list = random_numbers * 3
-print(multiplied_list)
+print(multiplied_list) # The output wll be a list which has been duplicated thrice
+
+#Lists can have heterogenous values
+List1 = [10, 10.5, "Business Analyst", True]
 
 # List of keywords from the resume in one line
 resume_keywords = ["Business Analyst", "Consulting", "Data Analysis", "Healthcare Efficiency", "Operational Review", "SQL", "Python", "Excel", "Data Visualization", "Tableau", "PowerBI", "NHS", "Project Management", "IT Solutions", "Statistical Analysis", "R Programming", "Discrete Event Simulation", "Optimization", "Resource Allocation", "Client Communication", "Requirement Gathering", "BRD", "FRD", "Gap Analysis", "Dashboard Development"]
 # Example numbers related to achievements or metrics in a resume
 
 # Years of experience in various fields
-years_of_experience = [1, 2, 3]  # Example: 1 year in IT Solutions, 2 years in Data Analysis, 3 years in Consulting
+years_of_experience = [1, 2]  # Example: 1 year in Consulting, 2 years in Data Analysis
 
 # Number of projects completed
 projects_completed = [5, 10, 15, 20]  # Example: Number of projects completed in different areas
@@ -419,3 +422,13 @@ print("Performance Improvement Percentages:", performance_improvements)
 print("Team Sizes Managed or Collaborated With:", team_sizes)
 print("Education GPA or Percentages:", education_scores)
 
+# Dictionaries
+# Data is stored in key value pair format
+# {} are used to create dictionaries
+
+#Difference between set and dictionary
+set1 = {1, 2, 3, 4}
+dict = {"ID":[1,2,3], "NAME":['Kartik', 'Shantanu', 'Raghav']}
+print(type(dict))
+
+# Data can be stored inside the dictionary in the form of SET, LIST or TUPLE

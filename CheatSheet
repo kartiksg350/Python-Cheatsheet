@@ -5,6 +5,38 @@ print(sys.version)
 # FIRST LINE OF CODE AS A PYTHON PROGRAMMER
 print("Hello world: Let's get the learning started")
 
+# LET'S GET STARTED
+# Math Operators
+# From highest to lowest precedence:
+
+# (**)Exponent / To the power	
+exponent = 2 ** 3
+print("Exponenet of 2**3 is " , exponent) # Exponenet of 2**3 is 8, in other words 2^3 = 8
+
+# (%) Modulus/Remainder	
+Modulus = 22 % 8
+print("Modulus of 22%8 is " , Modulus) # Modulus of 22 % 8 is 6, in other words remaider after diiding 22/8 = 6 (22-16=6)
+
+# (//) Integer division	
+Integer = 22 // 8
+print("Integer of 22//8 is " , Integer) # Integer of 22 // 8 is  2, in other words 22/8 = 2 (8*2=16, which is the closest number to the Numerator)
+
+# (/) Division	
+Division = 22 / 8
+print("Dvision of 22/8 is " , Division) # Division of 22/8 is  2.75
+
+# (*) Multiplication	
+Multiplication = 3 * 3
+print("Multiplication of 3 * 3 is " , Multiplication) # Multiplication of 3*3 = 9
+
+# (-) Subtraction	
+Subtraction = 5 - 2
+print("Subtraction of 5-2 is " , Subtraction) # Subtraction of 5-2 = 3
+
+# (+) Addition	
+Addition = 2 + 2
+print("Addition of 2 + 2 is " , Addition) # Addition of 2+2 = 4
+
 # PYTHON VARIABLES
 # Python variables can store data of different types, and different types can do different things.
 # Here are some examples of different types of Python variables:
@@ -32,26 +64,6 @@ print(type(d))
 e = True
 print(type(e))
 
-# List Type:
-# list
-f = ["Apple", "Banana", "Cherry"]
-print(type(f))
-
-# Tuple Type:
-# tuple
-g = (10.0, 20.0)
-print(type(g))
-
-# Set Type:
-# set
-h = {1, 2, 3, 4, 5}
-print(type(h))
-
-# Dictionary Type:
-# dict
-i = {"name": "Kartik", "age": 27, "is_programmer": True}
-print(type(i))
-
 # None Type:
 # NoneType
 j = None
@@ -67,6 +79,7 @@ print(type(x))
 print(type(y))
 print(type(z))
 
+# STRINGS:
 # String variables can be declared either by using single or double quotes:
 x = "Data Scientist is my goal"
 # is the same as
@@ -432,3 +445,23 @@ dict = {"ID":[1,2,3], "NAME":['Kartik', 'Shantanu', 'Raghav']}
 print(type(dict))
 
 # Data can be stored inside the dictionary in the form of SET, LIST or TUPLE
+
+# List Type:
+# list
+f = ["Apple", "Banana", "Cherry"]
+print(type(f))
+
+# Tuple Type:
+# tuple
+g = (10.0, 20.0)
+print(type(g))
+
+# Set Type:
+# set
+h = {1, 2, 3, 4, 5}
+print(type(h))
+
+# Dictionary Type:
+# dict
+i = {"name": "Kartik", "age": 27, "is_programmer": True}
+print(type(i))

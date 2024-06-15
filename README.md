@@ -17,3 +17,12 @@ Contents
 Each section is designed to provide clear and concise examples, making it a handy cheatsheet for both beginners and experienced programmers. Follow along as I practice and push new content daily, ensuring the repository stays up-to-date with my latest learnings.
 
 Feel free to explore, contribute, and use this repository to enhance your Python programming skills!
+
+USEFUL WEBPAGES TO LEARN PYTHON FROM SCRATCH:
+https://www.pythoncheatsheet.org/cheatsheet/basics
+https://www.w3schools.com/python/default.asp
+https://wiki.python.org/moin/BeginnersGuide
+
+HAVE FUN LEARNING!!!
+
+Ping me on LinkedIn for any queries: https://www.linkedin.com/in/kartiksinghgautamba2023/
